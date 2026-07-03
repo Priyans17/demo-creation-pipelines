@@ -119,5 +119,16 @@ export const config: WebdriverIO.Config = {
         sessionName: "Self Heal Changed (iOS)",
       },
     },
+
+    // Android: Screen Reader (TalkBack) Accessibility
+    {
+      ...baseAndroidCaps,
+      specs: ["../test/specs/e2e-mobile/android/screen-reader.e2e.ts"],
+      "appium:app": "bs://custom_id=bs-demo-android",
+      "bstack:options": {
+        ...baseBstackOptions,
+        sessionName: "Screen Reader - TalkBack (Android)",
+      },
+    },
   ] as any,
 };
