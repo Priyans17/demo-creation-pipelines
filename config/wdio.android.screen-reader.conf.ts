@@ -13,7 +13,8 @@ export const config: WebdriverIO.Config = {
       "appium:automationName": "UiAutomator2",
       "appium:app": "bs://4c34f7e9cf20759ec358441dc5f9c7fb182c7e30",
       "bstack:options": {
-        buildName: "E2E Mobile Suite",
+        projectName: "GH Screenreader",
+        buildName: "Mobile Suite",
         sessionName: "TalkBack Accessibility",
         debug: true,
         networkLogs: true,
