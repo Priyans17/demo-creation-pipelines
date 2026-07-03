@@ -77,5 +77,5 @@ jobs:
         run: npm run wdio:mobile
 
       - name: Run Android Screen Reader (TalkBack) Tests
-        if: ${{ github.event.inputs.run_screen_reader == 'true' }}
+        if: ${{ inputs.run_screen_reader }}
         run: npm run screen-reader:android

@@ -33,3 +33,6 @@ EOF
 
 test/apps/
 
+
+# Test Companion onboarding (local, per-machine)
+.test-companion/
