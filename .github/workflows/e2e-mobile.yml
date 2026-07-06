@@ -73,9 +73,10 @@ jobs:
             echo -e "\n Upload triggered for custom_id: $custom_id"
           done
 
-      - name: Run Mobile Functional E2E Tests
-        run: npm run wdio:mobile
-
       - name: Run Android Screen Reader (TalkBack) Tests
         # if: ${{ inputs.run_screen_reader == true || inputs.run_screen_reader == 'true' }}
         run: npm run screen-reader:android
+
+      - name: Run Mobile Functional E2E Tests
+        run: npm run wdio:mobile
+
